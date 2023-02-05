@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,300;0,500;1,200;1,400&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+:root{
+    --main-color:#bca477;
+    --black:#13131a;
+    --bg:#010103;
+    --border:.1rem solid #ffffff4d;
+}
+
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0, padding 0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+  }
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+.AD-pl{
+    margin-bottom: 10px;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5rem;
+}
+
+body{
+    background: var(--bg);
+}
+
+section{
+    padding: 2rem 7%;
+}
+
+.AD-btn1{
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background: var(--main-color);
+    cursor: pointer;
+}
+
+.mr{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+.AD-btn {
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background: green;
+    cursor: pointer;
+}
+
+.AD-heading{
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    padding-top: 20px;
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+.AD-heading span{
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+.AD-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+}
+
+.AD-header .navbar a{
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: #ffffff;
+}
+
+.AD-header .navbar a:hover{
+    color: var(--main-color);
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
+}
+
+.AD-header .AD-icons div{
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+}
+
+.AD-header .AD-icons div:hover{
+    color: var(--main-color);
+}
+
+#menu-btn{
+    display: none;
+}
+ 
+
+.AD-heading {
+    color: #fff;
+}
+
+.AD-home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(./fotot/mercedes-maybach-s-580-2021-luxury-cars-dark-background-5k-4961x2790-3460.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.AD-home .AD-content{
+    max-width: 60rem;
+}
+
+.AD-home .AD-content h3{
+    font-size: 6rem;
+    text-transform: uppercase;
+    color:var(--main-color);
+}
+
+.AD-home .AD-content p{
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: #fff;
+}
+
+.AD-about .AD-row{
+    display: flex;
+    align-items: center;
+    background: var(--black);
+    flex-wrap: wrap;
+}
+
+.AD-about .AD-row .AD-image{
+    flex:1 1 45rem;
+}
+
+.AD-about .AD-row .AD-image img{
+    width: 100%;
+}
+
+.AD-about .AD-row .AD-content{
+    flex:1 1 45rem;
+    padding: 2rem;
+}
+
+.AD-about .AD-row .AD-content h3{
+    font-size: 3rem;
+    color: #fff;
+}
+
+.AD-about .AD-row .AD-content p{
+    font-size: 1.6rem;
+    color: #ccc;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+.AD-menu .AD-box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    gap: 1.5rem;
+}
+
+.AD-menu .AD-box-container .AD-box{
+    padding: 5rem;
+    text-align: center;
+    border: var(--border);
+}
+
+.AD-menu .AD-box-container .AD-box img{
+    height: 200px;
+    width: 300px;
+}
+
+.AD-menu .AD-box-container .AD-box h3{
+    color: #fff;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.AD-menu .AD-box-container .AD-box .AD-price{
+    color: #fff;
+    font-size: 2.5rem;
+    padding: .5rem 0;
+}
+
+.AD-menu .AD-box-container .AD-box  .AD-price span{
+    color: #ff0000;
+    font-size: 2rem;
+    text-decoration: line-through;
+}
+
+.AD-menu .AD-box-container .AD-box:hover{
+    background: #ffffff;
+}
+
+.AD-menu .AD-box-container .AD-box:hover > *{
+    color:var(--black);
+}
+
+.review .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.review .box-container .box{
+    border: var(--border);
+    text-align: center;
+    padding: 5rem 2rem;
+}
+
+.review .box-container .box p{
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: #ccc;
+    padding: 2rem 0;
+}
+
+.review .box-container .box .user{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit:cover
+}
+
+.review .box-container .box h3{
+    padding: 1rem 0;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.review .box-container .box .stars i{
+    font-size: 1.5rem;
+    color: var(--main-color);
+}
+
+.review .box-container .box .quote img{
+    color: #d3ad7f;
+
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.AD-tini{
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    padding-top: 60px;
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+.AD-tini span{
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+table{
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%,-50%);
+    border-collapse: collapse;
+    width: 800px;
+    height: 400px;
+    border: 1px solid #bdc3c7;
+    background: white;
+    font-size: 10px;
+}
+
+tr{
+    transition: all .2s ease-in;
+    cursor: pointer;
+}
+
+th,td{
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddc;
+}
+
+#altin{
+    background-color: rgb(0, 0, 58);
+    color: #fff;
+}
+
+tr:hover{
+    background-color: rgb(30, 120, 246);
+    transform: scale(1.02);
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (max-width: 768px) { 
+    table{
+        width: 90%;
+    }
+    tr td th{
+        display: block;
+    }
+}
+
+.AD-contact .AD-row{
+    display: flex;
+    background: var(--black);
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.AD-contact .AD-row .AD-map{
+    flex: 1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.AD-contact .AD-row form{
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.AD-contact .AD-row form h3{
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    color: #fff;
+}
+
+.AD-contact .AD-row form .AD-inputBox{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background: var(--bg);
+    border: var(--border);
+}
+
+.AD-contact .AD-row form .AD-inputBox span{
+    color:#fff ;
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+
+.AD-contact .AD-row form .AD-inputBox input{
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    color: #fff;
+    text-transform: none;
+    background: none;
+}
+
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+        
+    }
+    
+    .AD-header{
+        padding: 1.5rem 2rem;
+    }
+    section{
+        padding: 2rem ;
+    }
+
+}
+
+@media (max-width:768px){
+    #menu-btn{
+        display: inline-block;     
+    }  
+
+    .AD-header .navbar{
+        position: absolute;
+        top: 100%; right: -100% ; 
+        background: #fff;
+        width: 30rem;
+        height: calc(100vh - 9.5rem);
+    }
+
+    .AD-header .navbar.active{
+        right: 0;
+    }
+
+    .AD-header .navbar a{
+        color: var(--black);
+        display: block;
+        margin: 1.5rem;
+        padding: .5rem;
+        font-size: 2rem;
+    }
+
+    
+    .AD-home{
+        background-position: left;
+        justify-content: center;
+        text-align:center;
+        
+    }
+    .AD-home .AD-content h3{
+        font-size: 4.5rem;
+    }
+
+    .AD-home .AD-content {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width:450px){
+    html{
+        font-size: 50%;       
+    }    
+}
